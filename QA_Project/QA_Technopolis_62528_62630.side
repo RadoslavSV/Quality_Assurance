@@ -1,0 +1,3159 @@
+{
+  "id": "ef432823-b714-43ed-9c57-eb4a40bc564b",
+  "version": "2.0",
+  "name": "Technopolis_QA",
+  "url": "https://www.technopolis.bg/bg/",
+  "tests": [{
+    "id": "4e6fa44a-95d5-4a68-bf6a-5beea4a77cc1",
+    "name": "test_reg_correctData",
+    "commands": [{
+      "id": "a9fc1109-4d68-4e0b-a6c2-43560e6705be",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91d1ecbc-eacc-4a92-b759-2a1554a9fc07",
+      "comment": "Check if the \"ВХОД\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "068a3585-ee3a-4da1-8042-6a97c102ec51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72915f34-94b2-4cf6-984f-7ea8814483db",
+      "comment": "Check if the \"РЕГИСТРИРАЙ СЕ\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.bottom:nth-child(5) span",
+      "targets": [
+        ["css=.bottom:nth-child(5) span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a0d4e0a-5845-4575-964e-e55dbabdc130",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottom:nth-child(5) span",
+      "targets": [
+        ["css=.bottom:nth-child(5) span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d2a9c41-5e95-44b6-83ec-612b13cfdff2",
+      "comment": "",
+      "command": "select",
+      "target": "id=titleKey",
+      "targets": [],
+      "value": "label=Г-н"
+    }, {
+      "id": "20c4ca6a-9b28-4cf1-b9b9-14db1d5e06dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "534696f9-3a77-4bea-9ee8-67d8ef66a212",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "firstName"
+    }, {
+      "id": "a457d149-9ef9-4de9-8cb5-c9eeb086d865",
+      "comment": "",
+      "command": "click",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a58dff3-a00e-4401-8f64-b5f83643db74",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "lastName"
+    }, {
+      "id": "97a49b28-2eb8-478a-a0c0-8f5c8e66fc45",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29afb1d8-c0bb-4708-8920-20910f68eaea",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "myEmail@abv.bg"
+    }, {
+      "id": "cd130c36-d9d4-4b06-a6ac-7e266a6be3ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b1c99e5-f572-4f0b-af9a-bdbbd5f28348",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "0881234567"
+    }, {
+      "id": "b4f5ed12-231a-424b-8302-f7f1211e8e63",
+      "comment": "",
+      "command": "click",
+      "target": "id=nolog_password",
+      "targets": [
+        ["id=nolog_password", "id"],
+        ["name=pwd", "name"],
+        ["css=#nolog_password", "css:finder"],
+        ["xpath=//input[@id='nolog_password']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb706b2b-6b64-4ede-b901-26a2523bc413",
+      "comment": "",
+      "command": "type",
+      "target": "id=nolog_password",
+      "targets": [
+        ["id=nolog_password", "id"],
+        ["name=pwd", "name"],
+        ["css=#nolog_password", "css:finder"],
+        ["xpath=//input[@id='nolog_password']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "password123"
+    }, {
+      "id": "0c73739b-e71c-4340-b606-dfbcdeea8fbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=nolog_passwordVerify",
+      "targets": [
+        ["id=nolog_passwordVerify", "id"],
+        ["name=checkPwd", "name"],
+        ["css=#nolog_passwordVerify", "css:finder"],
+        ["xpath=//input[@id='nolog_passwordVerify']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b93028b1-a087-4e23-81f2-c61f77f6deb0",
+      "comment": "",
+      "command": "type",
+      "target": "id=nolog_passwordVerify",
+      "targets": [
+        ["id=nolog_passwordVerify", "id"],
+        ["name=checkPwd", "name"],
+        ["css=#nolog_passwordVerify", "css:finder"],
+        ["xpath=//input[@id='nolog_passwordVerify']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "password123"
+    }, {
+      "id": "ac57522f-0cba-47c1-9958-b0cfe798fa1d",
+      "comment": "",
+      "command": "click",
+      "target": "id=conditions",
+      "targets": [
+        ["id=conditions", "id"],
+        ["name=gdprAgreed", "name"],
+        ["css=#conditions", "css:finder"],
+        ["xpath=//input[@id='conditions']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[9]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb86f041-4dbf-4499-99f1-194f9851f4d1",
+      "comment": "Check if \"ЗАПАЗВАНЕ\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.g-recaptcha",
+      "targets": [
+        ["css=.g-recaptcha", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31fefe78-6ddb-44e1-81a0-5709a21842eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-recaptcha",
+      "targets": [
+        ["css=.g-recaptcha", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1352df63-a7dc-459c-856c-a59aeaab8aa2",
+    "name": "test_reg_notSamePasswords",
+    "commands": [{
+      "id": "3505e732-7a54-4d79-956e-c6a0433a3a1c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c023427-1405-455c-9a10-4d7ba0f3e153",
+      "comment": "Check if the \"ВХОД\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60459e69-6c8c-4b37-a34b-6528974354ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09649731-4291-42de-850c-faf38360661f",
+      "comment": "Check if the \"РЕГИСТРИРАЙ СЕ\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.bottom:nth-child(5) span",
+      "targets": [
+        ["css=.bottom:nth-child(5) span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df633e31-9adc-482d-8e83-6aebccc4ab54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottom:nth-child(5) span",
+      "targets": [
+        ["css=.bottom:nth-child(5) span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cda1d43b-a0d6-447c-ac72-ce5813a1534d",
+      "comment": "",
+      "command": "select",
+      "target": "id=titleKey",
+      "targets": [],
+      "value": "label=Г-н"
+    }, {
+      "id": "670a6db9-b4dc-4ec6-bb79-0070de741a93",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9799fdbe-fa58-4bf1-a462-b1887e8be7cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "firstName"
+    }, {
+      "id": "802c984e-d823-42d8-ba9a-43968b64e44c",
+      "comment": "",
+      "command": "click",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72c843d2-4540-4d04-b6bb-4a4a917d79fa",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "lastName"
+    }, {
+      "id": "3c815b1a-773b-4ef0-badd-b36930e1f8c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95adb25d-f2e8-4a7a-9b1c-e971b96ac091",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "myEmail@abv.bg"
+    }, {
+      "id": "8df8b046-ddc0-4198-82ff-be2250c68365",
+      "comment": "",
+      "command": "click",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8769d0c-538f-437e-b004-fbbeba07185c",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "0881234567"
+    }, {
+      "id": "3b13072c-7347-47e7-860a-0dab31bfc018",
+      "comment": "",
+      "command": "click",
+      "target": "id=nolog_password",
+      "targets": [
+        ["id=nolog_password", "id"],
+        ["name=pwd", "name"],
+        ["css=#nolog_password", "css:finder"],
+        ["xpath=//input[@id='nolog_password']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87b01c60-be6f-47b6-bd9d-af47f21131ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=nolog_password",
+      "targets": [
+        ["id=nolog_password", "id"],
+        ["name=pwd", "name"],
+        ["css=#nolog_password", "css:finder"],
+        ["xpath=//input[@id='nolog_password']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "password123"
+    }, {
+      "id": "7e67d056-58be-4401-b6f3-63336d600f3b",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=nolog_password",
+      "targets": [
+        ["id=nolog_password", "id"],
+        ["name=pwd", "name"],
+        ["css=#nolog_password", "css:finder"],
+        ["xpath=//input[@id='nolog_password']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "pass"
+    }, {
+      "id": "6562e090-8875-4d8a-8e50-983aeec8220f",
+      "comment": "",
+      "command": "click",
+      "target": "id=nolog_passwordVerify",
+      "targets": [
+        ["id=nolog_passwordVerify", "id"],
+        ["name=checkPwd", "name"],
+        ["css=#nolog_passwordVerify", "css:finder"],
+        ["xpath=//input[@id='nolog_passwordVerify']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2092ffef-07e7-46da-b381-aeec0debd4bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=nolog_passwordVerify",
+      "targets": [
+        ["id=nolog_passwordVerify", "id"],
+        ["name=checkPwd", "name"],
+        ["css=#nolog_passwordVerify", "css:finder"],
+        ["xpath=//input[@id='nolog_passwordVerify']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "12passw"
+    }, {
+      "id": "c76a0db1-caa2-4e72-8b5c-c2a75cd75e6a",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=nolog_passwordVerify",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "pass2"
+    }, {
+      "id": "545cbed3-5a61-4b69-9195-61e5b27fc499",
+      "comment": "If the two passwords are equal, do:",
+      "command": "if",
+      "target": "${pass}==${pass2}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2630f9c2-af22-426d-993c-f734f0a01244",
+      "comment": "",
+      "command": "echo",
+      "target": "Both passwords are equal - ${pass}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccc0f77d-55e2-4afa-a724-220ec1c0aebb",
+      "comment": "Otherwise, do:",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "199bfeea-cb8d-4bfd-a14c-8cd061bcac5e",
+      "comment": "",
+      "command": "echo",
+      "target": "Password not equal - ${pass} AND ${pass2}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4462c915-6679-41c0-bd88-f92329156c99",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1483ea55-9918-42e5-9c00-8c2b289f8088",
+      "comment": "",
+      "command": "click",
+      "target": "id=conditions",
+      "targets": [
+        ["id=conditions", "id"],
+        ["name=gdprAgreed", "name"],
+        ["css=#conditions", "css:finder"],
+        ["xpath=//input[@id='conditions']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[9]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c357488b-05b0-4701-8278-8a84c1857e6c",
+      "comment": "Check if \"ЗАПАЗВАНЕ\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.g-recaptcha",
+      "targets": [
+        ["css=.g-recaptcha", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ead4545-b4dc-4594-9883-5972bb0023fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-recaptcha",
+      "targets": [
+        ["css=.g-recaptcha", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "374d5245-b91f-434d-bac7-fb442da795bf",
+    "name": "test_reg_notFilledFields",
+    "commands": [{
+      "id": "1a27a055-60f7-443a-81c8-f3bccbd336b4",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf808325-eb3f-446c-9cd9-d96b0803c8aa",
+      "comment": "Check if the \"ВХОД\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4da0a045-159e-44fe-9ec8-9228d825c19c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23044a3a-68a5-468c-bbeb-096a2c1304a3",
+      "comment": "Check if the \"РЕГИСТРИРАЙ СЕ\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.bottom:nth-child(5) span",
+      "targets": [
+        ["css=.bottom:nth-child(5) span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e8d3aa5-d809-4a35-96b2-6a17521bd573",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottom:nth-child(5) span",
+      "targets": [
+        ["css=.bottom:nth-child(5) span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1565168-c110-4f97-8221-3cad7b3bc3e4",
+      "comment": "Check if \"ЗАПАЗВАНЕ\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.g-recaptcha",
+      "targets": [
+        ["css=.g-recaptcha", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bdc7204-c8cf-4d4b-8c09-94700aab0d8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-recaptcha",
+      "targets": [
+        ["css=.g-recaptcha", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d60b9681-134e-48cb-906b-1c6c66eed8bc",
+    "name": "test_reg_fillDataUsingVars",
+    "commands": [{
+      "id": "17f8bbf9-7649-4e82-8c53-4595f5ad1b59",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de2fc8b5-df16-4266-8be0-f5c9aa9fa6a5",
+      "comment": "Check if the \"ВХОД\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10f66488-58b4-4481-a1da-7198d4aad223",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d46fb564-ef44-4231-b767-a494dbd5405a",
+      "comment": "Check if the \"РЕГИСТРИРАЙ СЕ\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.bottom:nth-child(5) span",
+      "targets": [
+        ["css=.style-scope:nth-child(6) > #text", "css:finder"],
+        ["xpath=(//yt-formatted-string[@id='text'])[6]", "xpath:attributes"],
+        ["xpath=//iron-selector[@id='chips']/yt-chip-cloud-chip-renderer[6]/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//yt-chip-cloud-chip-renderer[6]/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'Миксове')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45e1ceda-48e9-4f47-a98e-da0afb5fc9e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottom:nth-child(5) span",
+      "targets": [
+        ["css=.bottom:nth-child(5) span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb69b64f-f931-4b99-a42f-e7b8fa769eb8",
+      "comment": "",
+      "command": "select",
+      "target": "id=titleKey",
+      "targets": [],
+      "value": "label=Г-н"
+    }, {
+      "id": "79a0f1fb-adb4-46bd-831e-da24cf212c07",
+      "comment": "",
+      "command": "store",
+      "target": "Georgi",
+      "targets": [],
+      "value": "fname"
+    }, {
+      "id": "d5be1cac-a33c-4887-b7e0-3570bcd0cbed",
+      "comment": "",
+      "command": "store",
+      "target": "Ivanov",
+      "targets": [],
+      "value": "lname"
+    }, {
+      "id": "3710f562-2a14-4dd5-a65d-89cbad5f945f",
+      "comment": "",
+      "command": "store",
+      "target": "gIvanov@gmail.com",
+      "targets": [],
+      "value": "mail"
+    }, {
+      "id": "47bd474d-f4be-409c-9f56-2a05aba1c450",
+      "comment": "",
+      "command": "store",
+      "target": "0887999999",
+      "targets": [],
+      "value": "phone"
+    }, {
+      "id": "ed126129-f712-4ffc-9f3f-a922df37c07b",
+      "comment": "",
+      "command": "store",
+      "target": "toppass123",
+      "targets": [],
+      "value": "pass"
+    }, {
+      "id": "911c3548-653e-46ee-94ca-dca4ec5d027a",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e1213dc-34e7-4e89-957d-1af20bdbd64d",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${fname}"
+    }, {
+      "id": "86a3d92a-4b2d-42e4-92a5-43fbdaa5351d",
+      "comment": "",
+      "command": "click",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84f4430c-cdfa-4a1f-ae76-42e67c0323ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "${lname}"
+    }, {
+      "id": "b7729f2a-f974-44d1-8c58-beea7b23d6da",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2438a7f-d5f2-43b3-9abb-da9ee7a3cc38",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "${mail}"
+    }, {
+      "id": "2678957e-c5fc-44d2-9503-ee49324ef20d",
+      "comment": "",
+      "command": "click",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8621449-ddd3-42e9-8258-e66b8ad593c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "${phone}"
+    }, {
+      "id": "f344ef78-4a73-41f7-9822-b2ef62019701",
+      "comment": "",
+      "command": "click",
+      "target": "id=nolog_password",
+      "targets": [
+        ["id=nolog_password", "id"],
+        ["name=pwd", "name"],
+        ["css=#nolog_password", "css:finder"],
+        ["xpath=//input[@id='nolog_password']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab2b896e-b542-4e41-bf02-6f50b7df8231",
+      "comment": "",
+      "command": "type",
+      "target": "id=nolog_password",
+      "targets": [
+        ["id=nolog_password", "id"],
+        ["name=pwd", "name"],
+        ["css=#nolog_password", "css:finder"],
+        ["xpath=//input[@id='nolog_password']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "${pass}"
+    }, {
+      "id": "72c8cd26-9dea-482b-99ae-98fd31fadd6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=nolog_passwordVerify",
+      "targets": [
+        ["id=nolog_passwordVerify", "id"],
+        ["name=checkPwd", "name"],
+        ["css=#nolog_passwordVerify", "css:finder"],
+        ["xpath=//input[@id='nolog_passwordVerify']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e955c679-a20c-417e-b71e-dda34028b7e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=nolog_passwordVerify",
+      "targets": [
+        ["id=nolog_passwordVerify", "id"],
+        ["name=checkPwd", "name"],
+        ["css=#nolog_passwordVerify", "css:finder"],
+        ["xpath=//input[@id='nolog_passwordVerify']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "${pass}"
+    }, {
+      "id": "ea4140da-0617-463f-9d89-36896d99a773",
+      "comment": "",
+      "command": "click",
+      "target": "id=conditions",
+      "targets": [
+        ["id=conditions", "id"],
+        ["name=gdprAgreed", "name"],
+        ["css=#conditions", "css:finder"],
+        ["xpath=//input[@id='conditions']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[9]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c4539a0-2f95-46a2-9601-85b63bb6ad06",
+      "comment": "Check if \"ЗАПАЗВАНЕ\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.g-recaptcha",
+      "targets": [
+        ["css=.g-recaptcha", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c26a3b8a-0fed-4a79-8e6d-0aedf8c41bd5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-recaptcha",
+      "targets": [
+        ["css=.g-recaptcha", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[12]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c7443b93-d0c9-4494-8e37-34598c3778eb",
+    "name": "test_reg_accessExtraActions",
+    "commands": [{
+      "id": "1f5e8c80-a309-44e4-a3c4-cedb5b8662d8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/register",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05ac413c-8590-46ef-865c-d6569999c147",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Информация сигурност и защита на данни",
+      "targets": [
+        ["linkText=Информация сигурност и защита на данни", "linkText"],
+        ["css=.arrow-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Информация сигурност и защита на данни')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"$('.security-information').slideToggle(300);\"]", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/div[11]/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:;')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Информация сигурност и защита на данни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b940121e-16f5-449c-9a4f-47f2b7509229",
+      "comment": "Highlighting text with mouse cursor (not shown when running the test)",
+      "command": "click",
+      "target": "css=.security-information > p:nth-child(2)",
+      "targets": [
+        ["css=.security-information > p:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='registerForm']/div/div[11]/div/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'128 битово криптиране: специален алгоритъм защитава вашите пароли и лични данни от подслушване. Съхранението им се осъществява във формат, за който математически е доказано, че не могат да бъдат разкодирани.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90fcd79c-3a65-4573-8797-77fb35ca332c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Общите условия",
+      "targets": [
+        ["linkText=Общите условия", "linkText"],
+        ["css=.checkbox:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Общите условия')]", "xpath:link"],
+        ["xpath=//form[@id='registerForm']/div/div[9]/label/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/terms-and-conditions')]", "xpath:href"],
+        ["xpath=//label/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Общите условия')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6041",
+      "windowTimeout": 2000
+    }, {
+      "id": "40734af1-e61d-436e-bd57-6a45fbcc9530",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d961215-919d-4872-8695-43e6e46b66c1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6041}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e65dbb2c-a7c0-4960-89ea-c17ce37b7d26",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=www.technopolis.bg",
+      "targets": [
+        ["linkText=www.technopolis.bg", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'www.technopolis.bg')]", "xpath:link"],
+        ["xpath=//a[@href='http://www.technopolis.bg']", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'www.technopolis.bg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a026c5fe-c897-4d98-95cb-967fc4f4f1bb",
+    "name": "test_reg_useLiveChat",
+    "commands": [{
+      "id": "675be17a-7af7-4d74-8686-2700be2362ec",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/register",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cbd4d47-fd9d-460d-80a1-6c757fc5b198",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=8",
+      "targets": [
+        ["index=8"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ff496f6-8cc0-431a-a767-a4bc81871e30",
+      "comment": "Wait 8 seconds for live chat bubble button",
+      "command": "waitForElementPresent",
+      "target": "css=.e1mwfyk10",
+      "targets": [
+        ["css=.css-de527s > svg", "css:finder"]
+      ],
+      "value": "8000"
+    }, {
+      "id": "0e491ca5-296b-4931-85b3-93af2feb14b3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.e1mwfyk10",
+      "targets": [
+        ["css=.e1mwfyk10", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aee465d0-21d1-4fa9-83c5-e334d175e51f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.e1mwfyk10",
+      "targets": [
+        ["css=.css-de527s > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ea2cc7e-0fde-4e35-9104-e61a40289323",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "c320b375-5637-4a1f-a7ef-c593686635de",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=7",
+      "targets": [
+        ["index=7"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a9ab2d8-5a60-4416-85ea-b116f329c386",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='1ch60lle7cc']/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "John"
+    }, {
+      "id": "8d66b698-eaa2-4aba-b443-10696f057e83",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='1ch60lle7cc']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "johnHenry@gmail.com"
+    }, {
+      "id": "6eba9064-cb19-4f24-84dc-4da520f57d02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lc-90q5um > span",
+      "targets": [
+        ["css=.lc-90q5um > span", "css:finder"],
+        ["xpath=//div[@id='1ch60lle7cc']/div/form/div[4]/button/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba1856cf-cc62-4710-a593-3e860a458a65",
+      "comment": "",
+      "command": "type",
+      "target": "css=.lc-1ioonsj",
+      "targets": [
+        ["css=.lc-1ioonsj", "css:finder"],
+        ["xpath=//div[@id='widget-global-1ciby20r1ff']/div/div/div[6]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Hi! I have an issue."
+    }, {
+      "id": "53ced084-1550-4d6f-b284-8ca64ab4f0a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.e5ibypu0 > path",
+      "targets": [
+        ["css=.e5ibypu0 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1647ba3a-586f-4e27-a10e-4aedd1eee71e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f7d170e-1874-487d-8929-e3e67b4fbf6e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.e1mwfyk10:nth-child(5) > .lc-1mpchac",
+      "targets": [
+        ["css=.e1mwfyk10:nth-child(5) > .lc-1mpchac", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4ebf2cd-15ea-4cbb-bc08-ef63f9db6e2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.e1mwfyk10:nth-child(5) > .lc-1mpchac",
+      "targets": [
+        ["css=.e1mwfyk10:nth-child(5) > .lc-1mpchac", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c38d6425-26ac-4691-ab73-86578ca72048",
+      "comment": "",
+      "command": "click",
+      "target": "css=.e1mwfyk10:nth-child(5) path",
+      "targets": [
+        ["css=.e1mwfyk10:nth-child(5) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d40f30a7-449a-4d89-ba69-3fa155f06edd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.e1mwfyk10:nth-child(5) path",
+      "targets": [
+        ["css=.e1mwfyk10:nth-child(5) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e34c50d4-b853-47f7-b7e7-1ee00d3875c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.e1mwfyk10:nth-child(5) path",
+      "targets": [
+        ["css=.e1mwfyk10:nth-child(5) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e950db0-e97e-4add-be38-93af00998a48",
+      "comment": "Wait 8 seconds for \"X\" button for closing",
+      "command": "waitForElementPresent",
+      "target": "css=.lc-90q5um > span",
+      "targets": [
+        ["css=.css-de527s > svg", "css:finder"]
+      ],
+      "value": "8000"
+    }, {
+      "id": "d1f486b7-3f1e-4cc3-a445-ce82dde6f6ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lc-90q5um > span",
+      "targets": [
+        ["css=.lc-90q5um > span", "css:finder"],
+        ["xpath=//div[@id='overlay_portal_container']/div[3]/div[2]/div[2]/button/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed3c9f47-9fea-4ece-9382-8c1a96f62d5b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a3dbd8cd-c6e1-42fe-a6b4-8b63176324fa",
+    "name": "test_search_concreteItem",
+    "commands": [{
+      "id": "688466ce-54e0-4172-aa81-b1c1bad57f8a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85048cf0-f10f-4ef2-be2b-3112b1e01e3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fba5fc90-0022-4a73-b25c-e0164bed84de",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=query", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div[3]/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Конзола PLAYSTATION 5 PS5"
+    }, {
+      "id": "2dd44ebc-0ef8-4f2a-a40c-98c0f141d755",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset > button:nth-child(4) > span",
+      "targets": [
+        ["css=fieldset > button:nth-child(4) > span", "css:finder"],
+        ["xpath=//header[@id='header']/div[2]/div[3]/div/form/fieldset/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tърсене')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "675ac4eb-2322-425c-97d9-b1446d67d837",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-item:nth-child(1) .lazyloaded",
+      "targets": [
+        ["css=.list-item:nth-child(1) .lazyloaded", "css:finder"],
+        ["xpath=//img[@alt='Конзола PLAYSTATION 5  PS5']", "xpath:img"],
+        ["xpath=//div[@id='search-page']/div/div/div/div[2]/ul/li/div/div[2]/a/span/img", "xpath:idRelative"],
+        ["xpath=//span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "723f6ef6-4705-439e-a694-97f65904dd81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tabs-nav > li:nth-child(2) span",
+      "targets": [
+        ["css=.tabs-nav > li:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='main-pdp-div']/div[4]/div/div/div/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Характеристики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4f443ae5-dc1e-408b-b534-0f0fd3118fad",
+    "name": "test_search_nonExistentItem",
+    "commands": [{
+      "id": "310129e0-6372-42dc-856b-a69e5bec886b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37663f01-184a-429c-8be9-a5ade787cec6",
+      "comment": "",
+      "command": "store",
+      "target": "чанта от гибралтар",
+      "targets": [],
+      "value": "item"
+    }, {
+      "id": "ad9b3cc9-5bd3-4a6e-b39d-a3dc70a2136a",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=query", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div[3]/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06b44830-8c1d-4cbe-82b3-9e7691452c7c",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=query", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div[3]/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${item}"
+    }, {
+      "id": "d1d6d114-5c18-48d7-9a7a-8b528fd06f00",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=query", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div[3]/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "40e9e257-9c32-4ce3-8ed7-9c156d1e77c6",
+    "name": "test_search_usingDropdownMenu",
+    "commands": [{
+      "id": "8ca2d4d1-4d7e-4645-80c0-1aa0327558a9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1ecbabd-5f67-4c61-91fc-e70b19564225",
+      "comment": "",
+      "command": "click",
+      "target": "css=strong:nth-child(2)",
+      "targets": [
+        ["css=strong:nth-child(2)", "css:finder"],
+        ["xpath=//header[@id='header']/div[2]/div[2]/button/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Меню')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfc7818f-7777-4513-9490-2b5969d3a7f7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Спорт и свободно време",
+      "targets": [
+        ["linkText=Спорт и свободно време", "linkText"],
+        ["css=.item:nth-child(7) > .item-link-wrap > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Спорт и свободно време')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div[4]/ul/li[7]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/bg//c/P1103')])[5]", "xpath:href"],
+        ["xpath=//li[7]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Спорт и свободно време')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ed861d8-d580-48e0-89c8-371acc484a6a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Фенери",
+      "targets": [
+        ["linkText=Фенери", "linkText"],
+        ["css=.item:nth-child(7) .yCmsComponent:nth-child(11) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Фенери')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div[4]/ul/li[7]/div[2]/div/ul/li[11]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg//c/P11060601')]", "xpath:href"],
+        ["xpath=//li[7]/div[2]/div/ul/li[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Фенери')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64cba0f5-ea6c-4270-a5bc-bdd90ea7fa9c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Фенер VARTA 16601",
+      "targets": [
+        ["linkText=Фенер VARTA 16601", "linkText"],
+        ["css=.list-item:nth-child(3) .product-box__title-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Фенер VARTA 16601')]", "xpath:link"],
+        ["xpath=(//a[@onclick='pushProductClick(361421)'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='search-page']/div/div/div/div[2]/ul/li[3]/div/div[3]/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/bg/Feneri/Fener-VARTA-16601/p/361421')])[2]", "xpath:href"],
+        ["xpath=//li[3]/div/div[3]/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Фенер VARTA 16601')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07119dda-02d1-4f68-9397-72abef9a36c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) > a > span",
+      "targets": [
+        ["css=li:nth-child(4) > a > span", "css:finder"],
+        ["xpath=//div[@id='main-pdp-div']/div[4]/div/div/div/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Документация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d438f63-4edb-43aa-b61b-5be3aa56fda7",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > span:nth-child(2)",
+      "targets": [
+        ["css=div > span:nth-child(2)", "css:finder"],
+        ["xpath=//header[@id='header']/div/div[2]/div/div[2]/button/div/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "373956b2-5369-4ead-9231-59fbcf6f5bc5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Малки електроуреди",
+      "targets": [
+        ["css=.main-menu:nth-child(3) .item:nth-child(9) > .item-link-wrap > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Малки електроуреди')])[2]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[3]/ul/li[9]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/bg//c/P1113')])[61]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[9]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6af70d74-0c38-4536-aa6e-c13784c5d650",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Кафемашини и автомати",
+      "targets": [
+        ["linkText=Кафемашини и автомати", "linkText"],
+        ["css=.item:nth-child(9) .list-item:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Кафемашини и автомати')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[3]/ul/li[9]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/c/P111314')]", "xpath:href"],
+        ["xpath=//li[9]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Кафемашини и автомати')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25630009-8a1d-4700-87a3-9b72efc09836",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Кафеавтомати",
+      "targets": [
+        ["linkText=Кафеавтомати", "linkText"],
+        ["css=.active .yCmsComponent:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Кафеавтомати')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[3]/ul/li[9]/div[2]/div/ul/li[3]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/c/P11131401')]", "xpath:href"],
+        ["xpath=//li[9]/div[2]/div/ul/li[3]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Кафеавтомати')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "566eb853-3673-4a31-80ae-715ac549d114",
+    "name": "test_text_extractingTextFromFields",
+    "commands": [{
+      "id": "c5a00e03-e035-4a6c-9706-2543340c99ff",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/Malki-elektrouredi/Kafemashini-i-kafeavtomati/Kafeavtomati/c/P11131401",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edfde8cd-c8fd-482f-87f0-8d7e0a42cfd7",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.highlight",
+      "targets": [
+        ["css=.highlight", "css:finder"],
+        ["xpath=//div[@id='search-page']/div/div/div/div/div/h1/small/span", "xpath:idRelative"],
+        ["xpath=//small/span", "xpath:position"],
+        ["xpath=//span[contains(.,'37')]", "xpath:innerText"]
+      ],
+      "value": "qty"
+    }, {
+      "id": "c42b182f-91c0-4b95-b1c3-6df0fa1e8c0e",
+      "comment": "",
+      "command": "if",
+      "target": "${qty}<50",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3db62ae8-6ca1-4411-aa81-be6c7974b98c",
+      "comment": "",
+      "command": "echo",
+      "target": "${qty} items found, which is less than 50",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf2d9cbf-cfb4-4283-913f-ee456e845b92",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "211175b2-1409-452a-b0a1-4f713e7a433c",
+      "comment": "",
+      "command": "echo",
+      "target": "${qty} items found, which is not less than 50",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77828c4f-fcd0-42d3-b813-8a1faf7e85bf",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23ce2759-391a-40ec-8b11-5f5165bf7418",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Кафеавтомат PHILIPS SERIES 800 EP0824/00 15 bar, 1.8 L, ЧЕРНО",
+      "targets": [
+        ["linkText=Кафеавтомат PHILIPS SERIES 800 EP0824/00 15 bar, 1.8 L, ЧЕРНО", "linkText"],
+        ["css=.list-item:nth-child(1) .product-box__title-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Кафеавтомат PHILIPS SERIES 800 EP0824/00 15 bar, 1.8 L, ЧЕРНО')]", "xpath:link"],
+        ["xpath=(//a[@onclick='pushProductClick(800041)'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='search-page']/div/div/div/div[2]/ul/li/div/div[3]/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/bg/Kafeavtomati/Kafeavtomat-PHILIPS-SERIES-800-EP0824-00/p/800041')])[2]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Кафеавтомат PHILIPS SERIES 800 EP0824/00 15 bar, 1.8 L, ЧЕРНО')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55e8fe89-89aa-43bf-9216-fe11d6dc3a86",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.product-price .price-value",
+      "targets": [
+        ["css=.product-price .price-value", "css:finder"],
+        ["xpath=//div[@id='main-pdp-div']/div[2]/div[2]/div[5]/div/div/p/span", "xpath:idRelative"],
+        ["xpath=//div/p/span", "xpath:position"]
+      ],
+      "value": "prc"
+    }, {
+      "id": "f211ab0a-265b-42f4-b79a-829e3744fe6b",
+      "comment": "",
+      "command": "echo",
+      "target": "Price of product is ${prc}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c75c6730-c034-4149-8a24-c8a40b22b0a3",
+    "name": "test_favorites_addItems",
+    "commands": [{
+      "id": "20582175-2619-48d8-9d00-590501d53bc4",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg//Smartfoni-mobilni-telefoni-i-tableti/Smartfoni-i-mobilni-telefoni/c/P11040101?text=&pageselect=30&pricerange=&attr-2-10=SAMSUNG&layout=Grid&sort=price-asc&ajaxLoad=false&q=%3Aprice-asc%3Abrand%3ASAMSUNG",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "589e98fb-006b-449d-8255-24e329590d39",
+      "comment": "Declare a variable and initialize it with 1",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "203f544c-6850-43ac-adc3-90c6dfa787ae",
+      "comment": "",
+      "command": "while",
+      "target": "${i}<=6",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f6947c0-efdf-4f6a-9493-88a009544bc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-item:nth-child(${i}) .button-favorites",
+      "targets": [
+        ["css=.list-item:nth-child(1) .button-favorites", "css:finder"],
+        ["xpath=(//button[@type='button'])[204]", "xpath:attributes"],
+        ["xpath=//div[@id='search-page']/div/div/div/div[2]/ul/li/div/div[4]/div[3]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Любими')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca539f14-3599-42fe-9e6a-b13204af7ee5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${i}+1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "767c727b-e25e-46d9-8825-d483b5704e31",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1ff2eaea-faed-41dc-81bf-c2bf6ff443af",
+    "name": "test_cart_addAndMultiplyItem",
+    "commands": [{
+      "id": "749319e3-be6a-48e3-b972-fe451618bfae",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg//TV%2C-Video-i-Gaming/Televizori/c/P11090104",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2810ef41-d294-4b1a-be3f-0e508ddaaa85",
+      "comment": "",
+      "command": "click",
+      "target": "css=#addToCartButton14643 > span",
+      "targets": [
+        ["css=#addToCartButton14643 > span", "css:finder"],
+        ["xpath=//button[@id='addToCartButton14643']/span", "xpath:idRelative"],
+        ["xpath=//form/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeaa2692-ec1d-4e1f-a238-08c9bf08325b",
+      "comment": "counter = 1",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "counter"
+    }, {
+      "id": "bbc1657d-c72f-4914-bc02-962104f7f24a",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ae534bb-9f60-46c3-8d9a-36969b6bf77b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inc > span",
+      "targets": [
+        ["css=.inc > span", "css:finder"],
+        ["xpath=//form[@id='updateCartForm0']/p/a/button/span", "xpath:idRelative"],
+        ["xpath=//p/a/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbd6b08c-9f90-42be-8ef9-005e62cda189",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${counter} +1",
+      "targets": [],
+      "value": "counter"
+    }, {
+      "id": "21697bfb-77c2-407b-8a58-e4e19f5191ac",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${counter}<5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82a4d156-bda4-4f30-8952-1d5865b4d4a5",
+      "comment": "Wait for 5 seconds",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01d18577-2705-4124-9bd5-79b79acfba5c",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.total-price > .price-value",
+      "targets": [
+        ["css=.total-price > .price-value", "css:finder"],
+        ["xpath=//div[2]/div[2]/p/span", "xpath:position"]
+      ],
+      "value": "finalPrice"
+    }, {
+      "id": "4ad7b776-e3e3-4b1d-ba2d-cf45a78de2c3",
+      "comment": "",
+      "command": "echo",
+      "target": "Total price is ${finalPrice}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "952759c5-093e-4532-97f6-fb9f27cc193a",
+      "comment": "Close cart page",
+      "command": "click",
+      "target": "linkText=X",
+      "targets": [
+        ["linkText=X", "linkText"],
+        ["css=.back > a", "css:finder"],
+        ["xpath=//a[contains(text(),'X')]", "xpath:link"],
+        ["xpath=//header[@id='header-white']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/bg/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'X')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bb8fd53d-d9ac-4018-9b36-d4dc066220d1",
+    "name": "test_cart_verifyData",
+    "commands": [{
+      "id": "9f584dc9-182a-46af-8ccf-e9bec159afe2",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/cart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d319aee0-5b67-455b-acdd-5d803a3f5842",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "cartPageTitle"
+    }, {
+      "id": "d0d570f9-dd03-4471-9fab-e2188383eeb6",
+      "comment": "",
+      "command": "verify",
+      "target": "cartPageTitle",
+      "targets": [],
+      "value": "Techonopolis Cart"
+    }, {
+      "id": "fbb92000-0aba-4aaf-89ab-c9a531f7c70f",
+      "comment": "",
+      "command": "echo",
+      "target": "Page's official title is ${cartPageTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4206f826-c5eb-4230-a270-1988282012c8",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.item > .price > .price-value",
+      "targets": [
+        ["css=.item > .price > .price-value", "css:finder"],
+        ["xpath=//p/span", "xpath:position"]
+      ],
+      "value": "price"
+    }, {
+      "id": "74cb1e60-7dd4-446c-85d7-e3ab39483ad3",
+      "comment": "",
+      "command": "verify",
+      "target": "price",
+      "targets": [],
+      "value": "999 . 95"
+    }, {
+      "id": "063e03c5-1eac-4c60-b2d7-97b42d5bc4f9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.logo-desktop > path",
+      "targets": [
+        ["css=.logo-desktop > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e988e13-f1b1-4e7a-99aa-15e839563980",
+      "comment": "",
+      "command": "verifyEditable",
+      "target": "id=quantity0",
+      "targets": [
+        ["id=quantity0", "id"],
+        ["name=quantity", "name"],
+        ["css=#quantity0", "css:finder"],
+        ["xpath=//input[@id='quantity0']", "xpath:attributes"],
+        ["xpath=//form[@id='updateCartForm0']/p/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53c07c4b-f5c4-4c7b-93d4-e56b8823086e",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=pickup0",
+      "targets": [
+        ["id=pickup0", "id"],
+        ["name=deliveryMode", "name"],
+        ["css=#pickup0", "css:finder"],
+        ["xpath=//input[@id='pickup0']", "xpath:attributes"],
+        ["xpath=//form[@id='updateEntryDeliveryForm0']/div/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2db7ea83-ed85-4c40-b5dc-550d576232cd",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "id=standard-gross0",
+      "targets": [
+        ["id=standard-gross0", "id"],
+        ["css=#standard-gross0", "css:finder"],
+        ["xpath=//input[@id='standard-gross0']", "xpath:attributes"],
+        ["xpath=//form[@id='updateEntryDeliveryForm0']/div/div/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e60ab042-c948-4c95-99eb-6d7c8e1b5111",
+    "name": "test_language_changeLanguageMultipleTimes",
+    "commands": [{
+      "id": "0b2714eb-a933-4368-9911-539591fb44c0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07bf3a3b-ec82-4b95-aa49-f46610fb32f2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "e28b52aa-82da-4232-9fd4-3ce1903dcde5",
+      "comment": "",
+      "command": "while",
+      "target": "${i}<3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32d00bba-a3b6-41b8-b745-bfaacb6a771c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.item-language",
+      "targets": [
+        ["css=.item-language", "css:finder"],
+        ["xpath=//a[contains(text(),'en')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/_s/language?code=en')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6e786df-d295-4c3b-8cda-70c74ce1274d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-language",
+      "targets": [
+        ["css=.item-language > img", "css:finder"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[3]/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f5371f3-969a-43df-ade6-d9d758a6d153",
+      "comment": "pause for 2,5 seconds",
+      "command": "pause",
+      "target": "2500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fd38081-6dda-4e80-9b71-7fe70fdb2079",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=strong:nth-child(2)",
+      "targets": [
+        ["css=strong:nth-child(2)", "css:finder"],
+        ["xpath=//header[@id='header']/div[2]/div[2]/button/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Menu')]", "xpath:innerText"]
+      ],
+      "value": "menu"
+    }, {
+      "id": "2305d97e-6889-4cfc-9541-eeec979deee2",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.item-promotions",
+      "targets": [
+        ["css=.item-promotions", "css:finder"],
+        ["xpath=//a[contains(text(),'Brochure')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/c/Promotions')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": "brochure"
+    }, {
+      "id": "1b6ce0d0-3824-4702-8306-763f3ecf100b",
+      "comment": "",
+      "command": "echo",
+      "target": "Menu button: ${menu}. Brochure button: ${brochure}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25c51c50-2845-47e5-8f97-ac0f07edd3ef",
+      "comment": "i++",
+      "command": "executeScript",
+      "target": "return ${i}+1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "bfdf6518-d305-49ee-9390-28d588afec29",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "05f909c2-fd06-41ca-b09c-509f78ba52cd",
+    "name": "test_language_changeLanguageInItem",
+    "commands": [{
+      "id": "5a861aa9-d461-41bc-a3b8-e445c7128090",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/Smartfoni-i-mobilni-telefoni/Smartfon-GSM-APPLE-IPHONE-14-PRO-GOLD/p/577194",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16fccc67-6f28-4238-bc48-da351da070bb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "cnt"
+    }, {
+      "id": "841d98bc-c6a5-4ba0-b202-ddecba332fe5",
+      "comment": "",
+      "command": "store",
+      "target": "Описание",
+      "targets": [],
+      "value": "descr"
+    }, {
+      "id": "5e25ff7d-7849-4eab-8e54-49a9449c9844",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4b6f1c7-e27c-476f-ad35-0876227aed1b",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.active > span",
+      "targets": [
+        ["css=.active > span", "css:finder"],
+        ["xpath=//div[@id='main-pdp-div']/div[4]/div/div/div/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Description')]", "xpath:innerText"]
+      ],
+      "value": "name"
+    }, {
+      "id": "92bf91ef-782f-4c3b-a04f-0e2187467e90",
+      "comment": "",
+      "command": "verify",
+      "target": "name",
+      "targets": [],
+      "value": "${descr}"
+    }, {
+      "id": "93c662fb-de6e-42a8-a01b-e470edfd4493",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-language > img",
+      "targets": [
+        ["css=.item-language > img", "css:finder"],
+        ["xpath=//header[@id='header']/div/div[2]/div[3]/ul/li[2]/ul/li[3]/a/img", "xpath:idRelative"],
+        ["xpath=//li[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ee47688-5acd-47dc-8a12-68da2d56e2ba",
+      "comment": "",
+      "command": "pause",
+      "target": "2500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0ddc23e-677c-4044-87f3-ca518872b017",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${cnt}+1",
+      "targets": [],
+      "value": "cnt"
+    }, {
+      "id": "6c1810f4-e6ad-4e61-a240-1fbf28c295a6",
+      "comment": "",
+      "command": "store",
+      "target": "Description",
+      "targets": [],
+      "value": "descr"
+    }, {
+      "id": "ba9853e7-129e-49a6-9789-b412da951d3d",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${cnt}<2",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ac245bda-0d64-478a-bbf3-c718b292710f",
+    "name": "test_log_correctData",
+    "commands": [{
+      "id": "4931869b-c1e9-4d66-b44e-8a749b3a9616",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/?logoutP=logoutP",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c686a96-cf6f-4d63-bfa1-1039e9d50967",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ee8b069-3b00-4277-a0b1-d9851846a03d",
+      "comment": "Check if the \"ВХОД\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10ec711b-8d26-4dcf-bcad-1cc8b2b76ba8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-profile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef2752db-a872-41bc-b262-7560f4baacbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af1f14d8-9a64-45a5-b796-b683b029d99f",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "myEmail@abv.bg"
+    }, {
+      "id": "869f072d-1b77-4fd4-a408-4900ddcbe9ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c82aa0f-1466-4962-be64-3aeff0f90731",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password123"
+    }, {
+      "id": "e183bbc9-12ae-4f6f-9ab5-998a40e3dd5b",
+      "comment": "Check if the \"ВХОД\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.checkbox-item",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d1426df-5ca4-4f3a-99e0-fe46826ace7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox-item",
+      "targets": [
+        ["css=.checkbox-item", "css:finder"],
+        ["xpath=//form[@id='loginForm']/div/div[3]/div/label/div", "xpath:idRelative"],
+        ["xpath=//label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c304b503-e2cb-473d-bff4-c26ce863eabe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottom:nth-child(2) .button",
+      "targets": [
+        ["css=.bottom:nth-child(2) .button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94567123-db3b-4206-89fe-534b7bafb048",
+      "comment": "Check if the \"ИЗХОД\" button is present",
+      "command": "assertElementPresent",
+      "target": "id=logoutId",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6254b3bb-e3c9-413b-b2a6-36ae43e2c156",
+      "comment": "",
+      "command": "click",
+      "target": "id=logoutId",
+      "targets": [
+        ["id=logoutId", "id"],
+        ["css=#logoutId", "css:finder"],
+        ["xpath=//a[contains(text(),'Изход')]", "xpath:link"],
+        ["xpath=//a[@id='logoutId']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/logout')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ab8d5aba-44a9-4c7f-83de-9610b4134cc6",
+    "name": "test_log_incorrectUsername",
+    "commands": [{
+      "id": "e1700532-ce36-484b-9225-79a9a1b2a990",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "176f7c34-ebe3-4e92-9171-37e248c17691",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e58ad809-509d-4a03-a566-8a766388078c",
+      "comment": "Check if the \"ВХОД\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9c72dfa-269c-4909-885f-6a2feacc59dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2dc0ba5-670c-4401-9265-7e31f4fb5563",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89d0e33e-72f1-4942-a61b-be0d23ba7c44",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cbb8bf1-23bc-451a-88f1-08c5b21b22df",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "503af473-2c65-4340-9b77-d7311266da62",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "myEmail"
+    }, {
+      "id": "1f0c0746-8d27-4039-9af0-f4fa3df221ff",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7e1bf42-620e-4900-872b-274fd46c5ce6",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4149b4f-ecce-47be-8f88-f6e0478fe6b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password123"
+    }, {
+      "id": "71ae818f-b46f-4b95-b309-6738620a9d42",
+      "comment": "Check if the \"ВХОД\" button is present",
+      "command": "assertElementPresent",
+      "target": "css=.checkbox-item",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c67fc754-6a24-49a2-ba25-3ac79b354693",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottom:nth-child(2) .button",
+      "targets": [
+        ["css=.bottom:nth-child(2) .button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7c037be-ccda-4fc2-9ffa-0cb94202159b",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a21ece8-4eee-4e98-9647-3f55f86a874e",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "myEmail@abc.bg"
+    }, {
+      "id": "ad0c765c-b15a-4bc7-b6a3-85f4ca91ec8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottom:nth-child(2) .button",
+      "targets": [
+        ["css=.bottom:nth-child(2) .button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f7619e02-e2f3-4898-b16a-e0530cf4264f",
+    "name": "test_log_incorrectPassword",
+    "commands": [{
+      "id": "ccf46fe9-a4dc-469b-a856-b24fe4d02999",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/Smartfoni-i-mobilni-telefoni/Smartfon-GSM-APPLE-IPHONE-14-PRO-GOLD/p/577194",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "549c3201-5f78-419f-bde2-6bd4369a18d9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4b49bfd-89d3-4660-9661-b9ebcd7eca68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div[2]/div[3]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e58703a3-1f2c-48ec-9dd5-ec7613d139ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51cd62de-ec0d-4a86-b231-f98b42b3b456",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123password"
+    }, {
+      "id": "3df7435b-2baa-4c7a-8350-0e95582f376d",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fea8f625-8aed-4889-860f-594b4c6de3bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "myEmail@abv.bg"
+    }, {
+      "id": "e8dba165-d082-45bd-ba26-6f6e1c1f8336",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_remember",
+      "targets": [
+        ["id=login_remember", "id"],
+        ["name=login_remember", "name"],
+        ["css=#login_remember", "css:finder"],
+        ["xpath=//input[@id='login_remember']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[3]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ad3cc89-25c5-413c-956d-69fe40c199a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottom:nth-child(2) span",
+      "targets": [
+        ["css=.bottom:nth-child(2) span", "css:finder"],
+        ["xpath=//form[@id='loginForm']/div[2]/p/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "710977db-25da-4030-9153-48972afd47a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=u",
+      "targets": [
+        ["css=u", "css:finder"],
+        ["xpath=//a[@id='forgotten-password']/u", "xpath:idRelative"],
+        ["xpath=//u", "xpath:position"],
+        ["xpath=//u[contains(.,'Забравена парола?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41bd1411-eb40-4b01-90fc-b5a33e31b73b",
+      "comment": "",
+      "command": "click",
+      "target": "id=forgottenPwd-email",
+      "targets": [
+        ["id=forgottenPwd-email", "id"],
+        ["name=email", "name"],
+        ["css=#forgottenPwd-email", "css:finder"],
+        ["xpath=//input[@id='forgottenPwd-email']", "xpath:attributes"],
+        ["xpath=//form[@id='forgottenPwdFormId']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7ff0610-cdba-495e-a16b-d8191fe3525a",
+      "comment": "",
+      "command": "type",
+      "target": "id=forgottenPwd-email",
+      "targets": [
+        ["id=forgottenPwd-email", "id"],
+        ["name=email", "name"],
+        ["css=#forgottenPwd-email", "css:finder"],
+        ["xpath=//input[@id='forgottenPwd-email']", "xpath:attributes"],
+        ["xpath=//form[@id='forgottenPwdFormId']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/form/div/div/input", "xpath:position"]
+      ],
+      "value": "myEmail@abv.bg"
+    }, {
+      "id": "1471208d-083d-4f02-8c98-15d54b350d0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=forgottenPwdButton",
+      "targets": [
+        ["id=forgottenPwdButton", "id"],
+        ["css=#forgottenPwdButton", "css:finder"],
+        ["xpath=//button[@id='forgottenPwdButton']", "xpath:attributes"],
+        ["xpath=//form[@id='forgottenPwdFormId']/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2452169-116b-4aeb-856d-2a588f89e520",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-item:nth-child(2)",
+      "targets": [
+        ["css=.form-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a320c241-0697-4785-ac28-a33a544b338e",
+    "name": "test_log_incorrectInput",
+    "commands": [{
+      "id": "7a83481a-40af-44ee-b56c-c4201176ef1a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/Smartfoni-i-mobilni-telefoni/Smartfon-GSM-APPLE-IPHONE-14-PRO-GOLD/p/577194",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f33ab43-6867-4bc9-a89a-03e823c45b05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-profile",
+      "targets": [
+        ["css=.item-profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div[2]/div[3]/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fff10c4c-0224-4e00-bb83-90442092b06e",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d54a19ce-a4ce-49fe-8d95-01901892deff",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "emailMy@abv.bg"
+    }, {
+      "id": "fc22bad6-a200-4e3e-9332-a3d8ec28564a",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7d9076d-c80d-42e0-8b9e-3c7fb7c0eef7",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123password"
+    }, {
+      "id": "167a611e-c0c8-4541-bb01-ded57b89546a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottom:nth-child(2) .button",
+      "targets": [
+        ["css=.bottom:nth-child(2) .button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dbb3214a-69aa-46bb-a95f-0b78f1e13ea2",
+    "name": "test_quickLinks_onMainPage",
+    "commands": [{
+      "id": "94a8a722-f1c3-4710-9a5e-4eae1a14a2af",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/Smartfoni-i-mobilni-telefoni/Smartfon-GSM-APPLE-IPHONE-14-PRO-GOLD/p/577194",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f8f2316-ae90-4426-ae19-9279f15cf518",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Работа при нас",
+      "targets": [
+        ["linkText=Работа при нас", "linkText"],
+        ["css=.grid-d-3:nth-child(1) .yCmsComponent:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Работа при нас')]", "xpath:link"],
+        ["xpath=//footer[@id='footer']/div[2]/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/careers')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Работа при нас')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7b0493d-e7b7-4d2a-8fcb-79417eca4fb5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Новини",
+      "targets": [
+        ["linkText=Новини", "linkText"],
+        ["css=.grid-d-3:nth-child(1) .yCmsComponent:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Новини')]", "xpath:link"],
+        ["xpath=//footer[@id='footer']/div[2]/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/news')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Новини')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93368447-aa09-4b9f-a154-9a47cf98cc74",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=„Технополис” открива втори хипермаркет в Пловдив на Коматевско шосе в нов търговски парк",
+      "targets": [
+        ["linkText=„Технополис” открива втори хипермаркет в Пловдив на Коматевско шосе в нов търговски парк", "linkText"],
+        ["css=.item:nth-child(2) .item-text a", "css:finder"],
+        ["xpath=//a[contains(text(),'„Технополис” открива втори хипермаркет в Пловдив на Коматевско шосе в нов търговски парк')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'news/newsitem-20220624')])[2]", "xpath:href"],
+        ["xpath=//li[2]/article/div[2]/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'„Технополис” открива втори хипермаркет в Пловдив на Коматевско шосе в нов търговски парк')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4e0ee4b-fca9-441f-a819-d9368a79e097",
+      "comment": "Check if the \"НАЗАД\" button exists",
+      "command": "assertElementPresent",
+      "target": "css=.text-center > .button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c61856bb-4730-483e-91fd-13d87f214935",
+      "comment": "Click on button \"НАЗАД\"",
+      "command": "click",
+      "target": "css=.text-center > .button",
+      "targets": [
+        ["css=.text-center > .button", "css:finder"],
+        ["xpath=//button[@onclick='goBack()']", "xpath:attributes"],
+        ["xpath=//main/div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd159ded-e40f-4c60-a836-5ef0fe63d3bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Как да поръчам",
+      "targets": [
+        ["linkText=Как да поръчам", "linkText"],
+        ["css=.grid-d-3:nth-child(4) .yCmsComponent:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Как да поръчам')]", "xpath:link"],
+        ["xpath=//footer[@id='footer']/div[2]/div/div/div[4]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/howto-order')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Как да поръчам')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80fa4d78-3c25-47f5-880e-43f84e661614",
+      "comment": "Check if \"КУПИ\" is not a button on this page",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(1) .button-blue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ed8d31c-d2bb-4910-ae9c-9a51810450c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .button-blue",
+      "targets": [
+        ["css=tr:nth-child(1) .button-blue", "css:finder"],
+        ["xpath=//td[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f51ad6e3-5f76-491c-a39f-c8597f22dc17",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Рециклиране",
+      "targets": [
+        ["linkText=Рециклиране", "linkText"],
+        ["css=.grid-d-3:nth-child(4) .yCmsComponent:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Рециклиране')]", "xpath:link"],
+        ["xpath=//footer[@id='footer']/div[2]/div/div/div[4]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/recycling')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Рециклиране')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f4638f9-e699-45cc-8a99-46f1afdef379",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Помощ",
+      "targets": [
+        ["linkText=Помощ", "linkText"],
+        ["css=.grid-d-3:nth-child(4) .yCmsComponent:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Помощ')])[3]", "xpath:link"],
+        ["xpath=//footer[@id='footer']/div[2]/div/div/div[4]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/faq')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc278168-2d62-47ad-ad8e-ce7112d65bc9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Как да върна продукт?",
+      "targets": [
+        ["linkText=Как да върна продукт?", "linkText"],
+        ["css=.grid-d-3:nth-child(4) .yCmsComponent:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Как да върна продукт?')]", "xpath:link"],
+        ["xpath=//footer[@id='footer']/div[2]/div/div/div[4]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/how-to-return-products')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Как да върна продукт?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12eebfa0-bcfd-46c2-8a1c-c2a14af1a6ab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Общи условия",
+      "targets": [
+        ["linkText=Общи условия", "linkText"],
+        ["css=.grid-d-3:nth-child(1) .yCmsComponent:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Общи условия')]", "xpath:link"],
+        ["xpath=//footer[@id='footer']/div[2]/div/div/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/bg/terms-and-conditions')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Общи условия')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96aaa026-db2f-46b2-bc78-8252b315b96e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,992.7999877929688)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6e488397-0f0f-46a1-b0c7-19a5f646001f",
+    "name": "test_log_loginPraktiker",
+    "commands": [{
+      "id": "a81803f9-0711-4c4d-8baa-8ffcff2492de",
+      "comment": "",
+      "command": "open",
+      "target": "https://praktiker.bg/bg/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37ab41a1-886c-462f-881b-063bf6104f83",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/ol/li/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4ae2f0e-903a-43d1-87c5-10985054a256",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/ol/li/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "myEmail@abv.bg"
+    }, {
+      "id": "bd1a8923-6046-46f5-ae0b-f0ae84642211",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/ol/li[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d395b39-1aa5-4f5f-aded-2d9676c720c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_password",
+      "targets": [
+        ["id=j_password", "id"],
+        ["name=j_password", "name"],
+        ["css=#j_password", "css:finder"],
+        ["xpath=//input[@id='j_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/ol/li[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "password123"
+    }, {
+      "id": "55bb5738-c7f1-47c5-87fc-f73591d28284",
+      "comment": "Check \"Запомни ме\"",
+      "command": "click",
+      "target": "css=var:nth-child(2)",
+      "targets": [
+        ["css=var:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='loginForm']/fieldset/ol/li[3]/label/var", "xpath:idRelative"],
+        ["xpath=//label/var", "xpath:position"],
+        ["xpath=//var[contains(.,'Запомни ме')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38455446-6cc1-426f-85da-dd950196bcab",
+      "comment": "Click on \"Вход\"",
+      "command": "click",
+      "target": "css=.center > button",
+      "targets": [
+        ["css=.center > button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/ol/li[4]/button", "xpath:idRelative"],
+        ["xpath=//li[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6aa7a2a-79d8-4197-9bd1-660f3956b2a2",
+      "comment": "Click at my profil",
+      "command": "click",
+      "target": "css=a > var",
+      "targets": [
+        ["css=a > var", "css:finder"],
+        ["xpath=//header[@id='header']/div[2]/div[4]/ul/li[2]/a/var", "xpath:idRelative"],
+        ["xpath=//var", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86028634-68a2-4ab0-bf53-d3f4c77a42b4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Изход",
+      "targets": [
+        ["linkText=Изход", "linkText"],
+        ["css=.profile > .dropdown a", "css:finder"],
+        ["xpath=//a[contains(text(),'Изход')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div[4]/ul/li[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/logout')]", "xpath:href"],
+        ["xpath=//li[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Изход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e8442ac-83c0-44ee-9332-c17a42045f23",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2864ecb2-cd3a-4ff8-88f7-097504ef48d0",
+    "name": "test_filters_TVFilters",
+    "commands": [{
+      "id": "c3510746-3d8e-4349-aac7-150cc4db0bf9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.technopolis.bg/bg/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1198a9f4-ccec-4ccd-9d62-6152eec3a89b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toggle-main-menu > div",
+      "targets": [
+        ["css=.toggle-main-menu > div", "css:finder"],
+        ["xpath=//header[@id='header']/div[2]/div[2]/button/div", "xpath:idRelative"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b96f833-42d7-43a2-b90b-fd4d286bb2ff",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.item:nth-child(1) .items-title",
+      "targets": [
+        ["css=.item:nth-child(1) .items-title", "css:finder"],
+        ["xpath=//header[@id='header']/div[2]/div[4]/ul/li/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//li/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7b4b9db-eb49-408a-8388-3c47d02654f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Телевизори",
+      "targets": [
+        ["linkText=Телевизори", "linkText"],
+        ["css=.item:nth-child(1) .dropdown-list > .yCmsComponent:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Телевизори')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div[4]/ul/li/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bg/c/P11090104')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Телевизори')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6b6de98-100a-49b0-87e7-078d5cc757ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-toggle-filters > span",
+      "targets": [
+        ["css=.js-toggle-filters > span", "css:finder"],
+        ["xpath=//div[@id='search-page']/div/div/div/div/div[2]/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Филтри')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e53e2a6-4a62-4e78-955a-f133454b490e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-box:nth-child(3) .checkbox-item",
+      "targets": [
+        ["css=.filter-box:nth-child(3) .checkbox-item", "css:finder"],
+        ["xpath=//aside[@id='put_filters_in_aside']/div/div[2]/div[2]/div[2]/div/div/form/label/div", "xpath:idRelative"],
+        ["xpath=//label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d07a33e6-ea43-4f39-abc6-81d26369a8ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aside-filter__header-close",
+      "targets": [
+        ["css=.aside-filter__header-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[169]", "xpath:attributes"],
+        ["xpath=//aside[@id='put_filters_in_aside']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//aside/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Затвори')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1cdbfdcb-c715-4a0f-aeeb-2c288806c62a",
+    "name": "Registration_Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4e6fa44a-95d5-4a68-bf6a-5beea4a77cc1", "1352df63-a7dc-459c-856c-a59aeaab8aa2", "374d5245-b91f-434d-bac7-fb442da795bf", "d60b9681-134e-48cb-906b-1c6c66eed8bc", "c7443b93-d0c9-4494-8e37-34598c3778eb", "a026c5fe-c897-4d98-95cb-967fc4f4f1bb"]
+  }, {
+    "id": "e494dbe9-2752-42c8-8aa9-26c989c8b7a9",
+    "name": "Search_Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a3dbd8cd-c6e1-42fe-a6b4-8b63176324fa", "4f443ae5-dc1e-408b-b534-0f0fd3118fad", "40e9e257-9c32-4ce3-8ed7-9c156d1e77c6"]
+  }, {
+    "id": "13fe9652-8ca8-4c31-a759-3d9d62fde544",
+    "name": "Text_Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["566eb853-3673-4a31-80ae-715ac549d114"]
+  }, {
+    "id": "870b45f8-d0ed-4556-9411-37251b31c695",
+    "name": "Favorites_Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c75c6730-c034-4149-8a24-c8a40b22b0a3"]
+  }, {
+    "id": "fe245341-0f25-49fd-b6ce-7e8fc7736e87",
+    "name": "Cart_Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1ff2eaea-faed-41dc-81bf-c2bf6ff443af", "bb8fd53d-d9ac-4018-9b36-d4dc066220d1"]
+  }, {
+    "id": "983c0266-4af9-4965-ad78-91a98b8f85bc",
+    "name": "Language_Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["05f909c2-fd06-41ca-b09c-509f78ba52cd", "e60ab042-c948-4c95-99eb-6d7c8e1b5111"]
+  }, {
+    "id": "39504aa0-7e18-457e-bbc7-826e4af6ec01",
+    "name": "Login_Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ac245bda-0d64-478a-bbf3-c718b292710f", "a320c241-0697-4785-ac28-a33a544b338e", "f7619e02-e2f3-4898-b16a-e0530cf4264f", "ab8d5aba-44a9-4c7f-83de-9610b4134cc6", "6e488397-0f0f-46a1-b0c7-19a5f646001f"]
+  }, {
+    "id": "50c1f18a-eb5a-48e4-a4fc-9b587a0c784c",
+    "name": "Filters/Links_Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2864ecb2-cd3a-4ff8-88f7-097504ef48d0", "dbb3214a-69aa-46bb-a95f-0b78f1e13ea2"]
+  }],
+  "urls": ["https://www.technopolis.bg/bg/", "https://www.technopolis.bg/bg/register", "https://www.technopolis.bg/bg", "https://www.technopolis.bg/bg//Malki-elektrouredi/Kafemashini-i-kafeavtomati/Kafeavtomati/c/P11131401", "https://www.technopolis.bg/bg/Smartfoni-i-mobilni-telefoni/Smartfon-GSM-APPLE-IPHONE-14-PRO-GOLD/p/577194", "https://praktiker.bg/bg/login"],
+  "plugins": []
+}
